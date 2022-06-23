@@ -2,9 +2,8 @@ import React from "react";
 
 
 export default function NewsItems(props) {
-  {console.log(props.article);}
-  return (
-    
+
+  return (    
       <div className="card my-3" style={{ width: "18rem" }}>
         <img src= {props.article.urlToImage}  className="card-img-top" alt="img" />
         <div className="card-body">
