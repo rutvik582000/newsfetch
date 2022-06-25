@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import {Link} from 'react-router-dom';
 
 
 export default function Navbar() {
@@ -13,13 +14,13 @@ export default function Navbar() {
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
-          <li className="nav-item"><a className="nav-link" href="/">business<span className="sr-only"></span></a></li>
-          <li className="nav-item"><a className="nav-link" href="/">entertainment<span className="sr-only"></span></a></li>
-          <li className="nav-item"><a className="nav-link" href="/">general<span className="sr-only"></span></a></li>
-          <li className="nav-item"><a className="nav-link" href="/">health<span className="sr-only"></span></a></li>
-          <li className="nav-item"><a className="nav-link" href="/">science<span className="sr-only"></span></a></li>
-          <li className="nav-item"><a className="nav-link" href="/">sports<span className="sr-only"></span></a></li>
-          <li className="nav-item"><a className="nav-link" href="/">technology<span className="sr-only"></span></a></li>
+          <li className="nav-item"><Link className="nav-link" to="/">general<span className="sr-only"></span></Link></li>
+          <li className="nav-item"><Link className="nav-link" to="/business">business<span className="sr-only"></span></Link></li>
+          <li className="nav-item"><Link className="nav-link" to="/entertainment">entertainment<span className="sr-only"></span></Link></li>
+          <li className="nav-item"><Link className="nav-link" to="/health">health<span className="sr-only"></span></Link></li>
+          <li className="nav-item"><Link className="nav-link" to="/science">science<span className="sr-only"></span></Link></li>
+          <li className="nav-item"><Link className="nav-link" to="/sports">sports<span className="sr-only"></span></Link></li>
+          <li className="nav-item"><Link className="nav-link" to="/technology">technology<span className="sr-only"></span></Link></li>
         </ul>
       </div>
     </nav>
